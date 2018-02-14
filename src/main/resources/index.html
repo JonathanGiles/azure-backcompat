@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Java Azure Backwards Compatibility Results</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .center {
+            text-align: center;
+        }
+        .icon {
+            width: 32px;
+        }
+        .table {
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Java Azure Backwards Compatibility Results</h1>
+
+        <p>
+            This report displays the results of backwards compatibility scans run over a number of projects, comparing a previous release with a more recent release.
+            To view the source code that operates this project, refer to the <a href="https://github.com/JonathanGiles/azure-backcompat">GitHub project</a>.
+        </p>
+
+        <table id="resultsTable" class="table table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th>Name</th>
+                    <th class='center'>Issues Identified</th>
+                </tr>
+            </thead>
+        </table>
+
+        <small><center>Maintained by <a href="http://www.jonathangiles.net">Jonathan Giles</a></center></small>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script language="JavaScript">
+        $(document).ready(function() {
+            $.getJSON('reports/summary.json', function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    drawRow(data[i]);
+                }
+            });
+        });
+
+        function drawRow(rowData) {
+            var success = rowData.success;
+
+            var row = $("<tr class='" + (success ? 'table-success' : 'table-danger') +"' />")
+            $("#resultsTable").append(row);
+
+            row.append($("<td><a href='results.html?report=" + rowData.name + ".json'>" + rowData.name + "</a></td>"));
+            row.append($("<td class='center'>" + rowData.issues + "</td>"));
+        }
+    </script>
+</body>
+</html>

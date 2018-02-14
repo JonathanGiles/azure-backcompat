@@ -1,2 +1,3 @@
 # azure-backcompat
-Project to review the backwards compatibility of Azure Java SDK releases
+Project that generates a report detailing all backwards incompatible changes between specified versions of an SDK. 
+Results of each run are [published online](https://jonathangiles.github.io/azure-backcompat) for easy review.

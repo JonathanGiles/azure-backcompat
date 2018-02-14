@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Azure Batch 2.1.0 -> 3.0.0",
+    "oldRelease": "com.microsoft.azure:azure-batch:jar:2.1.0",
+    "newRelease": "com.microsoft.azure:azure-batch:jar:3.0.0"
+  }
+]
