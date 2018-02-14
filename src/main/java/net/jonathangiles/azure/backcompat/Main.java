@@ -35,7 +35,7 @@ public class Main {
         List<SDK> releasesToCheck = loadSDKs();
 
         List<Summary> summaries = new ArrayList<>();
-        releasesToCheck.parallelStream().forEach(sdk -> compare(sdk, summaries));
+        releasesToCheck.forEach(sdk -> compare(sdk, summaries));
 
         // write out summary details of scan
         try (Writer writer = new FileWriter(REPORTS_DIR.getName() + "/summary.json")) {
