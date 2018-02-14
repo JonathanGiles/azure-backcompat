@@ -64,20 +64,13 @@ public class Main {
         String oldRepo = null;
         String newRepo = null;
 
-        ConfigurableMavenResolverSystem cfgOld = Maven.configureResolver();
-        ConfigurableMavenResolverSystem cfgNew = Maven.configureResolver();
+        ConfigurableMavenResolverSystem cfgOld = Maven.configureResolver()
+                .withMavenCentralRepo(true)
+                .withRemoteRepo("maven-central-snapshots", "https://oss.sonatype.org/content/repositories/snapshots/", "default");
 
-        if (oldRepo == null || oldRepo.equals("null")) {
-            cfgOld = cfgOld.withMavenCentralRepo(true);
-        } else {
-            cfgOld = cfgOld.withRemoteRepo("remote", oldRepo, "default");
-        }
-
-        if (newRepo == null || newRepo.equals("null")) {
-            cfgNew = cfgNew.withMavenCentralRepo(true);
-        } else {
-            cfgNew = cfgNew.withRemoteRepo("remote", newRepo, "default");
-        }
+        ConfigurableMavenResolverSystem cfgNew = Maven.configureResolver()
+                .withMavenCentralRepo(true)
+                .withRemoteRepo("maven-central-snapshots", "https://oss.sonatype.org/content/repositories/snapshots/", "default");
 
         MavenResolvedArtifact[] oldArtifacts = cfgOld.resolve(sdk.getOldRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
         MavenResolvedArtifact[] newArtifacts = cfgNew.resolve(sdk.getNewRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();

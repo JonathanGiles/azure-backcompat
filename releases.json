@@ -3,5 +3,28 @@
     "name": "Azure Batch 2.1.0 -> 3.0.0",
     "oldRelease": "com.microsoft.azure:azure-batch:jar:2.1.0",
     "newRelease": "com.microsoft.azure:azure-batch:jar:3.0.0"
+  },
+
+  // Azure Batch 3.1.0-SNAPSHOT is not in Maven Central Snapshots Repo
+//  {
+//    "name": "Azure Batch 3.1.0-SNAPSHOT -> 3.0.0",
+//    "oldRelease": "com.microsoft.azure:azure-batch:jar:3.0.0",
+//    "newRelease": "com.microsoft.azure:azure-batch:jar:3.1.0-SNAPSHOT"
+//  }
+
+  {
+    "name": "Azure Libraries for Java 1.5.1 -> 1.6.0",
+    "oldRelease": "com.microsoft.azure:azure:jar:1.5.1",
+    "newRelease": "com.microsoft.azure:azure:jar:1.6.0"
+  },
+  {
+    "name": "Azure Libraries for Java 1.5.0 -> 1.5.1",
+    "oldRelease": "com.microsoft.azure:azure:jar:1.5.0",
+    "newRelease": "com.microsoft.azure:azure:jar:1.5.1"
+  },
+  {
+    "name": "Azure Libraries for Java 1.4.0 -> 1.5.0",
+    "oldRelease": "com.microsoft.azure:azure:jar:1.4.0",
+    "newRelease": "com.microsoft.azure:azure:jar:1.5.0"
   }
 ]
