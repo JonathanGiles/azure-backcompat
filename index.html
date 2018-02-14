@@ -58,7 +58,7 @@
         function drawRow(rowData) {
             var success = rowData.success;
 
-            var row = $("<tr class='" + (success ? 'table-success' : 'table-danger') +"' />")
+            var row = $("<tr />");
             $("#resultsTable").append(row);
 
             row.append($("<td><a href='results.html?report=" + rowData.name + ".json'>" + rowData.name + "</a></td>"));

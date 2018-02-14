@@ -8,8 +8,8 @@
         "name": "method removed",
         "description": "Method was removed.",
         "classification": {
-          "BINARY": "BREAKING",
-          "SOURCE": "BREAKING"
+          "SOURCE": "BREAKING",
+          "BINARY": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.batch.protocol.models",
@@ -29,8 +29,8 @@
         "name": "return type changed",
         "description": "The return type changed from \u0027int\u0027 to  \u0027java.lang.Integer\u0027.",
         "classification": {
-          "BINARY": "BREAKING",
-          "SOURCE": "POTENTIALLY_BREAKING"
+          "SOURCE": "POTENTIALLY_BREAKING",
+          "BINARY": "BREAKING"
         },
         "attachments": {
           "oldType": "int",
@@ -52,8 +52,8 @@
         "name": "parameter type changed",
         "description": "The type of the parameter changed from \u0027int\u0027 to \u0027java.lang.Integer\u0027.",
         "classification": {
-          "BINARY": "BREAKING",
-          "SOURCE": "POTENTIALLY_BREAKING"
+          "SOURCE": "POTENTIALLY_BREAKING",
+          "BINARY": "BREAKING"
         },
         "attachments": {
           "oldType": "int",
@@ -76,8 +76,8 @@
         "name": "method removed",
         "description": "Method was removed.",
         "classification": {
-          "BINARY": "BREAKING",
-          "SOURCE": "BREAKING"
+          "SOURCE": "BREAKING",
+          "BINARY": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.batch.protocol.models",
@@ -97,8 +97,8 @@
         "name": "method removed",
         "description": "Method was removed.",
         "classification": {
-          "BINARY": "BREAKING",
-          "SOURCE": "BREAKING"
+          "SOURCE": "BREAKING",
+          "BINARY": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.batch.protocol.models",

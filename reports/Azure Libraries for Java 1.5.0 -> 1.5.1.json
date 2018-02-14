@@ -1,0 +1,98 @@
+[
+  {
+    "oldAPI": "method java.lang.String com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContent(java.lang.String, java.lang.String, java.lang.String)",
+    "newAPI": "method java.lang.String com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContent(java.lang.String, java.lang.String, java.lang.String)",
+    "differences": [
+      {
+        "code": "java.annotation.added",
+        "name": "new annotation",
+        "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
+        "classification": {
+          "SOURCE": "EQUIVALENT",
+          "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
+          "annotation": "@com.microsoft.azure.management.apigeneration.Beta(.V1_5_0)",
+          "package": "com.microsoft.azure.management.containerinstance",
+          "classSimpleName": "ContainerGroups",
+          "methodName": "getLogContent",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method java.lang.String com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContent(java.lang.String, java.lang.String, java.lang.String, int)",
+    "newAPI": "method java.lang.String com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContent(java.lang.String, java.lang.String, java.lang.String, int)",
+    "differences": [
+      {
+        "code": "java.annotation.added",
+        "name": "new annotation",
+        "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
+        "classification": {
+          "SOURCE": "EQUIVALENT",
+          "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
+          "annotation": "@com.microsoft.azure.management.apigeneration.Beta(.V1_5_0)",
+          "package": "com.microsoft.azure.management.containerinstance",
+          "classSimpleName": "ContainerGroups",
+          "methodName": "getLogContent",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method rx.Observable\u003cjava.lang.String\u003e com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContentAsync(java.lang.String, java.lang.String, java.lang.String)",
+    "newAPI": "method rx.Observable\u003cjava.lang.String\u003e com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContentAsync(java.lang.String, java.lang.String, java.lang.String)",
+    "differences": [
+      {
+        "code": "java.annotation.added",
+        "name": "new annotation",
+        "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
+        "classification": {
+          "SOURCE": "EQUIVALENT",
+          "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
+          "annotation": "@com.microsoft.azure.management.apigeneration.Beta(.V1_5_0)",
+          "package": "com.microsoft.azure.management.containerinstance",
+          "classSimpleName": "ContainerGroups",
+          "methodName": "getLogContentAsync",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method rx.Observable\u003cjava.lang.String\u003e com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContentAsync(java.lang.String, java.lang.String, java.lang.String, int)",
+    "newAPI": "method rx.Observable\u003cjava.lang.String\u003e com.microsoft.azure.management.containerinstance.ContainerGroups::getLogContentAsync(java.lang.String, java.lang.String, java.lang.String, int)",
+    "differences": [
+      {
+        "code": "java.annotation.added",
+        "name": "new annotation",
+        "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
+        "classification": {
+          "SOURCE": "EQUIVALENT",
+          "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
+          "annotation": "@com.microsoft.azure.management.apigeneration.Beta(.V1_5_0)",
+          "package": "com.microsoft.azure.management.containerinstance",
+          "classSimpleName": "ContainerGroups",
+          "methodName": "getLogContentAsync",
+          "elementKind": "method"
+        }
+      }
+    ]
+  }
+]
