@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Java Azure Backwards Compatibility Results</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .table {
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Java Azure Backwards Compatibility Results</h1>
+
+        <h2 id="projectName"></h2>
+
+        <p>
+            This report displays the results of backwards compatibility scans run over the project shown above, comparing a previous release with a more recent release.
+            To view the source code that operates this project, refer to the <a href="https://github.com/JonathanGiles/azure-backcompat">GitHub project</a>. To return back
+            to the main index, <a href="index.html">click here</a>.
+        </p>
+
+        <div id="resultsDiv">
+
+        </div>
+
+        <small><center>Maintained by <a href="http://www.jonathangiles.net">Jonathan Giles</a></center></small>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script language="JavaScript">
+        $(document).ready(function() {
+            var report = getUrlVars()["report"];
+            var prettyReport = decodeURIComponent(report);
+            prettyReport = prettyReport.substr(0, prettyReport.length - 5);
+            document.getElementById("projectName").innerHTML = prettyReport;
+
+            $.getJSON('reports/' + report, function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    drawRow(data[i]);
+                }
+            });
+        });
+
+        function drawRow(rowData) {
+            var table = $("<table id='resultsTable' class='table table-hover'>");
+            $("#resultsDiv").append(table);
+
+            table.append("<thead class=\"thead-light\">\n" +
+                "                    <tr>\n" +
+                "                        <th>Property</th>\n" +
+                "                        <th>Information</th>\n" +
+                "                    </tr>\n" +
+                "                </thead>\n" +
+                "                <tbody>\n" +
+                "                    <tr>\n" +
+                "                        <td>Old</td>\n" +
+                "                        <td>" + rowData.oldAPI + "</td>\n" +
+                "                    </tr>\n" +
+                "                    <tr>\n" +
+                "                        <td>New</td>\n" +
+                "                        <td>" + rowData.newAPI + "</td>\n" +
+                "                    </tr>\n" +
+                "                    <tr>\n" +
+                "                        <td>Summary</td>\n" +
+                "                        <td>" + rowData.differences[0].name + "</td>\n" +
+                "                    </tr>\n" +
+                "                    <tr>\n" +
+                "                        <td>Description</td>\n" +
+                "                        <td>" + rowData.differences[0].description + "</td>\n" +
+                "                    </tr>\n" +
+                "                    <tr>\n" +
+                "                        <td>Source compatible</td>\n" +
+                "                        <td>" + rowData.differences[0].classification.SOURCE + "</td>\n" +
+                "                    </tr>\n" +
+                "                    <tr>\n" +
+                "                        <td>Binary compatible</td>\n" +
+                "                        <td>" + rowData.differences[0].classification.BINARY + "</td>\n" +
+                "                    </tr>\n" +
+                "                </tbody>");
+
+            table.append("<br/>");
+        }
+
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+    </script>
+</body>
+</html>

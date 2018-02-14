@@ -1,0 +1,112 @@
+[
+  {
+    "oldAPI": "method com.microsoft.azure.batch.protocol.models.CloudServiceConfiguration com.microsoft.azure.batch.protocol.models.CloudServiceConfiguration::withCurrentOSVersion(java.lang.String)",
+    "newAPI": "null",
+    "differences": [
+      {
+        "code": "java.method.removed",
+        "name": "method removed",
+        "description": "Method was removed.",
+        "classification": {
+          "BINARY": "BREAKING",
+          "SOURCE": "BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.batch.protocol.models",
+          "classSimpleName": "CloudServiceConfiguration",
+          "methodName": "withCurrentOSVersion",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method int com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::numberOfInstances()",
+    "newAPI": "method java.lang.Integer com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::numberOfInstances()",
+    "differences": [
+      {
+        "code": "java.method.returnTypeChanged",
+        "name": "return type changed",
+        "description": "The return type changed from \u0027int\u0027 to  \u0027java.lang.Integer\u0027.",
+        "classification": {
+          "BINARY": "BREAKING",
+          "SOURCE": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "oldType": "int",
+          "newType": "java.lang.Integer",
+          "package": "com.microsoft.azure.batch.protocol.models",
+          "classSimpleName": "MultiInstanceSettings",
+          "methodName": "numberOfInstances",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "parameter com.microsoft.azure.batch.protocol.models.MultiInstanceSettings com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::withNumberOfInstances(\u003d\u003d\u003dint\u003d\u003d\u003d)",
+    "newAPI": "parameter com.microsoft.azure.batch.protocol.models.MultiInstanceSettings com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::withNumberOfInstances(\u003d\u003d\u003djava.lang.Integer\u003d\u003d\u003d)",
+    "differences": [
+      {
+        "code": "java.method.parameterTypeChanged",
+        "name": "parameter type changed",
+        "description": "The type of the parameter changed from \u0027int\u0027 to \u0027java.lang.Integer\u0027.",
+        "classification": {
+          "BINARY": "BREAKING",
+          "SOURCE": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "oldType": "int",
+          "newType": "java.lang.Integer",
+          "package": "com.microsoft.azure.batch.protocol.models",
+          "classSimpleName": "MultiInstanceSettings",
+          "methodName": "withNumberOfInstances",
+          "parameterIndex": "0",
+          "elementKind": "parameter"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method java.util.List\u003cjava.lang.String\u003e com.microsoft.azure.batch.protocol.models.OSDisk::imageUris()",
+    "newAPI": "null",
+    "differences": [
+      {
+        "code": "java.method.removed",
+        "name": "method removed",
+        "description": "Method was removed.",
+        "classification": {
+          "BINARY": "BREAKING",
+          "SOURCE": "BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.batch.protocol.models",
+          "classSimpleName": "OSDisk",
+          "methodName": "imageUris",
+          "elementKind": "method"
+        }
+      }
+    ]
+  },
+  {
+    "oldAPI": "method com.microsoft.azure.batch.protocol.models.OSDisk com.microsoft.azure.batch.protocol.models.OSDisk::withImageUris(java.util.List\u003cjava.lang.String\u003e)",
+    "newAPI": "null",
+    "differences": [
+      {
+        "code": "java.method.removed",
+        "name": "method removed",
+        "description": "Method was removed.",
+        "classification": {
+          "BINARY": "BREAKING",
+          "SOURCE": "BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.batch.protocol.models",
+          "classSimpleName": "OSDisk",
+          "methodName": "withImageUris",
+          "elementKind": "method"
+        }
+      }
+    ]
+  }
+]
