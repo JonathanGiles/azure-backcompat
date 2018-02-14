@@ -8,6 +8,8 @@ import net.jonathangiles.azure.backcompat.report.Summary;
 import org.jboss.shrinkwrap.resolver.api.maven.ConfigurableMavenResolverSystem;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.MavenResolvedArtifact;
+import org.jboss.shrinkwrap.resolver.api.maven.repository.MavenRemoteRepositories;
+import org.jboss.shrinkwrap.resolver.api.maven.repository.MavenRemoteRepository;
 import org.jboss.shrinkwrap.resolver.api.maven.strategy.AcceptAllStrategy;
 import org.revapi.*;
 import org.revapi.java.JavaApiAnalyzer;
@@ -61,37 +63,39 @@ public class Main {
     }
 
     private static void compare(SDK sdk, List<Summary> summaries) {
-        String oldRepo = null;
-        String newRepo = null;
+        MavenRemoteRepository mavenCentralSnapshots = MavenRemoteRepositories.createRemoteRepository(
+                "maven-central-snapshots",
+                "http://oss.sonatype.org/content/repositories/snapshots",
+                "default");
 
         ConfigurableMavenResolverSystem cfgOld = Maven.configureResolver()
-                .withMavenCentralRepo(true)
-                .withRemoteRepo("maven-central-snapshots", "https://oss.sonatype.org/content/repositories/snapshots/", "default");
+//                .withRemoteRepo(mavenCentralSnapshots)
+                .withMavenCentralRepo(true);
+
 
         ConfigurableMavenResolverSystem cfgNew = Maven.configureResolver()
-                .withMavenCentralRepo(true)
-                .withRemoteRepo("maven-central-snapshots", "https://oss.sonatype.org/content/repositories/snapshots/", "default");
+//                .withRemoteRepo(mavenCentralSnapshots)
+                .withMavenCentralRepo(true);
+
 
         MavenResolvedArtifact[] oldArtifacts = cfgOld.resolve(sdk.getOldRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
         MavenResolvedArtifact[] newArtifacts = cfgNew.resolve(sdk.getNewRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
 
         API oldApi = API
                 .of(new MavenAwareFileArchive(sdk.getOldRelease(), oldArtifacts[0].asFile()))
-                .addSupportArchives(
-                        Stream.of(oldArtifacts)
-                                .skip(1)
-                                .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
-                                .toArray(MavenAwareFileArchive[]::new))
+                .addSupportArchives(Stream.of(oldArtifacts)
+                    .skip(1)
+                    .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
+                    .toArray(MavenAwareFileArchive[]::new))
                 .build();
 
 
         API newApi = API
                 .of(new MavenAwareFileArchive(sdk.getNewRelease(), newArtifacts[0].asFile()))
-                .addSupportArchives(
-                        Stream.of(newArtifacts)
-                                .skip(1)
-                                .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
-                                .toArray(MavenAwareFileArchive[]::new))
+                .addSupportArchives(Stream.of(newArtifacts)
+                    .skip(1)
+                    .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
+                    .toArray(MavenAwareFileArchive[]::new))
                 .build();
 
         Revapi revapi = Revapi.builder()
