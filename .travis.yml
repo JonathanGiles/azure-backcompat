@@ -22,5 +22,5 @@ install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
-  - mvn exec:java
+  - mvn clean package exec:java -Djava.util.logging.config.file=./logging.properties
   - ./gradlew -Dorg.ajoberstar.grgit.auth.username=${username} -Dorg.ajoberstar.grgit.auth.password=${password} gitPublishPush
