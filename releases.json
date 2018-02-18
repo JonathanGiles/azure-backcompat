@@ -13,6 +13,11 @@
 //  }
 
   {
+    "name": "Azure Libraries for Java 1.6.0 -> 1.6.1-SNAPSHOT",
+    "oldRelease": "com.microsoft.azure:azure:jar:1.6.0",
+    "newRelease": "com.microsoft.azure:azure:jar:1.6.1-SNAPSHOT"
+  },
+  {
     "name": "Azure Libraries for Java 1.5.1 -> 1.6.0",
     "oldRelease": "com.microsoft.azure:azure:jar:1.5.1",
     "newRelease": "com.microsoft.azure:azure:jar:1.6.0"

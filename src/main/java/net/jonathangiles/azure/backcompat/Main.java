@@ -5,12 +5,10 @@ import com.google.gson.reflect.TypeToken;
 import net.jonathangiles.azure.backcompat.archive.MavenAwareFileArchive;
 import net.jonathangiles.azure.backcompat.report.Result;
 import net.jonathangiles.azure.backcompat.report.Summary;
-import org.jboss.shrinkwrap.resolver.api.ResolutionException;
 import org.jboss.shrinkwrap.resolver.api.maven.*;
 import org.jboss.shrinkwrap.resolver.api.maven.repository.MavenRemoteRepositories;
 import org.jboss.shrinkwrap.resolver.api.maven.repository.MavenRemoteRepository;
 import org.jboss.shrinkwrap.resolver.api.maven.strategy.AcceptAllStrategy;
-import org.jboss.shrinkwrap.resolver.api.maven.strategy.MavenResolutionStrategy;
 import org.revapi.*;
 import org.revapi.java.JavaApiAnalyzer;
 
@@ -63,17 +61,18 @@ public class Main {
     }
 
     private static void compare(SDK sdk, List<Summary> summaries) {
-//        MavenRemoteRepository mavenCentralSnapshots = MavenRemoteRepositories.createRemoteRepository(
-//                "ossrh",
-//                "https://oss.sonatype.org/content/repositories/snapshots/",
-//                "default");
+        // add support for maven central snapshots repo
+        MavenRemoteRepository mavenCentralSnapshots = MavenRemoteRepositories.createRemoteRepository(
+                "ossrh",
+                "https://oss.sonatype.org/content/repositories/snapshots/",
+                "default");
 
         ConfigurableMavenResolverSystem cfgOld = Maven.configureResolver()
-//                .withRemoteRepo(mavenCentralSnapshots)
+                .withRemoteRepo(mavenCentralSnapshots)
                 .withMavenCentralRepo(true);
 
         ConfigurableMavenResolverSystem cfgNew = Maven.configureResolver()
-//                .withRemoteRepo(mavenCentralSnapshots)
+                .withRemoteRepo(mavenCentralSnapshots)
                 .withMavenCentralRepo(true);
 
         MavenResolvedArtifact[] oldArtifacts = cfgOld.resolve(sdk.getOldRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
