@@ -18,7 +18,8 @@
           "elementKind": "method"
         }
       }
-    ]
+    ],
+    "grade": "grade-high"
   },
   {
     "oldAPI": "method int com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::numberOfInstances()",
@@ -41,7 +42,8 @@
           "elementKind": "method"
         }
       }
-    ]
+    ],
+    "grade": "grade-high"
   },
   {
     "oldAPI": "parameter com.microsoft.azure.batch.protocol.models.MultiInstanceSettings com.microsoft.azure.batch.protocol.models.MultiInstanceSettings::withNumberOfInstances(\u003d\u003d\u003dint\u003d\u003d\u003d)",
@@ -65,7 +67,8 @@
           "elementKind": "parameter"
         }
       }
-    ]
+    ],
+    "grade": "grade-high"
   },
   {
     "oldAPI": "method java.util.List\u003cjava.lang.String\u003e com.microsoft.azure.batch.protocol.models.OSDisk::imageUris()",
@@ -86,7 +89,8 @@
           "elementKind": "method"
         }
       }
-    ]
+    ],
+    "grade": "grade-high"
   },
   {
     "oldAPI": "method com.microsoft.azure.batch.protocol.models.OSDisk com.microsoft.azure.batch.protocol.models.OSDisk::withImageUris(java.util.List\u003cjava.lang.String\u003e)",
@@ -107,6 +111,7 @@
           "elementKind": "method"
         }
       }
-    ]
+    ],
+    "grade": "grade-high"
   }
 ]

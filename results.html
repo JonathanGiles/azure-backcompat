@@ -8,10 +8,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
-        .table {
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 20px;
+        .container {
+            word-wrap: break-word;
+        }
+        .row.header.grade-fyi {
+            background-color: lightgrey;
+        }
+        .row.header.grade-high {
+            background-color: #d9534f;
+            color: white;
+        }
+        .row.header.grade-mid {
+            background-color: #f0ad4e;
+            color: white;
+        }
+        .row.header.grade-low {
+            background-color: #f0c64e;
+            color: white;
+        }
+        .row.header h4 {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+        .row > .header {
+            font-weight: 500;
+        }
+        .resultsTable > .container {
+            border-width: 1px;
+            border-color: lightgrey;
+            border-style: solid;
+        }
+        a.tooltip-no-link {
+            color: inherit;
+            border-bottom: dashed 1px gray;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -28,7 +59,10 @@
             to the main index, <a href="index.html">click here</a>.
         </p>
 
-        <div id="resultsDiv">
+        <div id="container-fluid">
+            <div class="row" id="resultsArea">
+
+            </div>
 
         </div>
 
@@ -39,6 +73,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script language="JavaScript">
+        var binaryTooltip = "Binary Compatibility means that when API is changed, the compiled code will continue to work with the new API, without needing to recompile.";
+        var sourceTooltip = "Source Compatibility means that when API is changed, it is possible to still compile against the new API without changing the source code.";
+
         $(document).ready(function() {
             var report = getUrlVars()["report"];
             var prettyReport = decodeURIComponent(report);
@@ -47,49 +84,69 @@
 
             $.getJSON('reports/' + report, function(data) {
                 for (var i = 0; i < data.length; i++) {
-                    drawRow(data[i]);
+                    drawRow(i, data[i]);
                 }
             });
+
+            // $('[data-toggle="tooltip"]').tooltip()
         });
 
-        function drawRow(rowData) {
-            var table = $("<table id='resultsTable' class='table table-hover'>");
-            $("#resultsDiv").append(table);
+        function drawRow(index, rowData) {
+            var table = $("<div class=\"col-12 resultsTable\">");
+            $("#resultsArea").append(table);
 
-            table.append("<thead class=\"thead-light\">\n" +
-                "                    <tr>\n" +
-                "                        <th>Property</th>\n" +
-                "                        <th>Information</th>\n" +
-                "                    </tr>\n" +
-                "                </thead>\n" +
-                "                <tbody>\n" +
-                "                    <tr>\n" +
-                "                        <td>Old</td>\n" +
-                "                        <td>" + rowData.oldAPI + "</td>\n" +
-                "                    </tr>\n" +
-                "                    <tr>\n" +
-                "                        <td>New</td>\n" +
-                "                        <td>" + rowData.newAPI + "</td>\n" +
-                "                    </tr>\n" +
-                "                    <tr>\n" +
-                "                        <td>Summary</td>\n" +
-                "                        <td>" + rowData.differences[0].name + "</td>\n" +
-                "                    </tr>\n" +
-                "                    <tr>\n" +
-                "                        <td>Description</td>\n" +
-                "                        <td>" + rowData.differences[0].description + "</td>\n" +
-                "                    </tr>\n" +
-                "                    <tr>\n" +
-                "                        <td>Source compatible</td>\n" +
-                "                        <td>" + rowData.differences[0].classification.SOURCE + "</td>\n" +
-                "                    </tr>\n" +
-                "                    <tr>\n" +
-                "                        <td>Binary compatible</td>\n" +
-                "                        <td>" + rowData.differences[0].classification.BINARY + "</td>\n" +
-                "                    </tr>\n" +
-                "                </tbody>");
+            table.append(
+                '                    <div class="container">\n' +
+                '                        <div class="row header ' + rowData.grade + '">\n' +
+                '                            <div class="col-12">\n' +
+                '                                <h4>Change #' + (index + 1) + '</h4>\n' +
+                '                            </div>\n' +
+                '                        </div>\n' +
+                printAPI("Old API:", rowData.oldAPI) +
+                '\n' +
+                printAPI("New API:", rowData.newAPI) +
+                '\n' +
+                '                        <div class="row">\n' +
+                '                            <div class="col-3 header">Details:</div>\n' +
+                '                            <div class="col-9">' + rowData.differences[0].description + '</div>\n' +
+                '                        </div>\n' +
+                '\n' +
+                printCompatible("Source Compatible:", sourceTooltip, rowData.differences[0].classification.SOURCE) +
+                '\n' +
+                printCompatible("Binary Compatible:", binaryTooltip, rowData.differences[0].classification.BINARY) +
+                '                    </div>')
 
             table.append("<br/>");
+
+            $('[data-toggle="tooltip"]').tooltip()
+
+        }
+
+        function printAPI(title, data) {
+            return data === "null" ? "" :
+            '                        <div class="row">\n' +
+            '                            <div class="col-3 header">' + title +'</div>\n' +
+            '                            <div class="col-9">' + data + '</div>\n' +
+            '                        </div>\n';
+        }
+
+        function printCompatible(title, tooltip, data) {
+            return '                        <div class="row">\n' +
+            '                            <div class="col-3 header">\n' +
+            '                                <a href="#" class="tooltip-no-link" data-toggle="tooltip" title="' + tooltip + '">' + title + '</a>\n' +
+            '                            </div>\n' +
+            '                            <div class="col-9">' + prettyPrintClassification(data) + '</div>\n' +
+            '                        </div>\n';
+        }
+
+        function prettyPrintClassification(input) {
+            switch(input) {
+                case "BREAKING": return "Breaking";
+                case "POTENTIALLY_BREAKING": return "Potentially breaking";
+                case "NON_BREAKING": return "Not breaking";
+                case "EQUIVALENT": return "Equivalent";
+                default: return input;
+            }
         }
 
         function getUrlVars() {
