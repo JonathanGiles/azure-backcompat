@@ -8,8 +8,8 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
@@ -31,8 +31,8 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
@@ -54,8 +54,8 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
@@ -77,8 +77,8 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
@@ -100,8 +100,8 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Method\u0027.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "EQUIVALENT"
         },
         "attachments": {
@@ -125,8 +125,8 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Method\u0027.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "SOURCE": "EQUIVALENT"
         },
         "attachments": {
