@@ -8,8 +8,8 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "BINARY": "NON_BREAKING",
           "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "NON_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
