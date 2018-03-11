@@ -1,15 +1,61 @@
 [
   {
     "oldAPI": "null",
-    "newAPI": "method com.microsoft.azure.management.network.Subnet.DefinitionStages.WithAttach\u003cParentT\u003e com.microsoft.azure.management.network.Subnet.DefinitionStages.WithServiceEndpoint\u003cParentT\u003e::withAccessFromService(com.microsoft.azure.management.network.ServiceEndpointType) @ com.microsoft.azure.management.network.Subnet.DefinitionStages.WithAttach\u003cParentT\u003e",
+    "newAPI": "method com.microsoft.azure.management.network.Subnet.Update com.microsoft.azure.management.network.Subnet.UpdateStages.WithServiceEndpoint::withAccessFromService(com.microsoft.azure.management.network.ServiceEndpointType) @ com.microsoft.azure.management.network.Subnet.Update",
     "differences": [
       {
         "code": "java.method.addedToInterface",
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "BINARY": "NON_BREAKING",
           "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "NON_BREAKING",
+          "SOURCE": "BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.management.network",
+          "classSimpleName": "Update",
+          "methodName": "withAccessFromService",
+          "elementKind": "method"
+        }
+      }
+    ],
+    "grade": "grade-high"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "method com.microsoft.azure.management.network.Subnet.Update com.microsoft.azure.management.network.Subnet.UpdateStages.WithServiceEndpoint::withoutAccessFromService(com.microsoft.azure.management.network.ServiceEndpointType) @ com.microsoft.azure.management.network.Subnet.Update",
+    "differences": [
+      {
+        "code": "java.method.addedToInterface",
+        "name": "method added to interface",
+        "description": "Method was added to an interface.",
+        "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "NON_BREAKING",
+          "SOURCE": "BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.management.network",
+          "classSimpleName": "Update",
+          "methodName": "withoutAccessFromService",
+          "elementKind": "method"
+        }
+      }
+    ],
+    "grade": "grade-high"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "method com.microsoft.azure.management.network.Subnet.UpdateDefinitionStages.WithAttach\u003cParentT\u003e com.microsoft.azure.management.network.Subnet.UpdateDefinitionStages.WithServiceEndpoint\u003cParentT\u003e::withAccessFromService(com.microsoft.azure.management.network.ServiceEndpointType) @ com.microsoft.azure.management.network.Subnet.UpdateDefinitionStages.WithAttach\u003cParentT\u003e",
+    "differences": [
+      {
+        "code": "java.method.addedToInterface",
+        "name": "method added to interface",
+        "description": "Method was added to an interface.",
+        "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "NON_BREAKING",
           "SOURCE": "BREAKING"
         },
         "attachments": {
