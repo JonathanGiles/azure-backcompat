@@ -8,9 +8,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.network",
@@ -31,14 +31,37 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.network",
           "classSimpleName": "Update",
           "methodName": "withoutAccessFromService",
+          "elementKind": "method"
+        }
+      }
+    ],
+    "grade": "grade-high"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "method java.util.Map\u003ccom.microsoft.azure.management.network.ServiceEndpointType, java.util.List\u003ccom.microsoft.azure.management.resources.fluentcore.arm.Region\u003e\u003e com.microsoft.azure.management.network.Subnet::servicesWithAccess()",
+    "differences": [
+      {
+        "code": "java.method.addedToInterface",
+        "name": "method added to interface",
+        "description": "Method was added to an interface.",
+        "classification": {
+          "SOURCE": "BREAKING",
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING"
+        },
+        "attachments": {
+          "package": "com.microsoft.azure.management.network",
+          "classSimpleName": "Subnet",
+          "methodName": "servicesWithAccess",
           "elementKind": "method"
         }
       }
