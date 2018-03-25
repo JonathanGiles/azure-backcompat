@@ -8,13 +8,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "AvailabilitySetSkuTypes",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.AvailabilitySetSkuTypes is returned from method com.microsoft.azure.management.compute.AvailabilitySetSkuTypes com.microsoft.azure.management.compute.AvailabilitySetSkuTypes::fromString(java.lang.String) \u003c- com.microsoft.azure.management.compute.AvailabilitySetSkuTypes is returned from method com.microsoft.azure.management.compute.AvailabilitySetSkuTypes com.microsoft.azure.management.compute.ComputeSku::availabilitySetSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.AvailabilitySetSkuTypes is used as a type parameter or type variable bound on method java.util.Collection\u003ccom.microsoft.azure.management.compute.AvailabilitySetSkuTypes\u003e com.microsoft.azure.management.compute.AvailabilitySetSkuTypes::values() \u003c- com.microsoft.azure.management.compute.AvailabilitySetSkuTypes is returned from method com.microsoft.azure.management.compute.AvailabilitySetSkuTypes com.microsoft.azure.management.compute.ComputeSku::availabilitySetSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -31,13 +31,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "DiskSku",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.DiskSku is returned from method com.microsoft.azure.management.compute.DiskSku com.microsoft.azure.management.compute.DiskSku::withName(com.microsoft.azure.management.compute.StorageAccountTypes) \u003c- com.microsoft.azure.management.compute.DiskSku is used as parameter in method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes::fromDiskSku(com.microsoft.azure.management.compute.DiskSku) \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.DiskSku is returned from method com.microsoft.azure.management.compute.DiskSku com.microsoft.azure.management.compute.DiskSku::withName(com.microsoft.azure.management.compute.StorageAccountTypes) \u003c- com.microsoft.azure.management.compute.DiskSku is used as parameter in method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes::fromDiskSku(com.microsoft.azure.management.compute.DiskSku) \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -54,13 +54,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "DiskSkuTypes",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes::fromStorageAccountType(com.microsoft.azure.management.compute.StorageAccountTypes) \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.compute.DiskSkuTypes.PREMIUM_LRS has the type com.microsoft.azure.management.compute.DiskSkuTypes \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -77,13 +77,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuCapabilities",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCapabilities is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuCapabilities\u003e com.microsoft.azure.management.compute.ComputeSku::capabilities() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCapabilities is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuCapabilities\u003e com.microsoft.azure.management.compute.ComputeSku::capabilities() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -100,13 +100,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuCapacity",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCapacity is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacity com.microsoft.azure.management.compute.ComputeSku::capacity() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCapacity is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacity com.microsoft.azure.management.compute.ComputeSku::capacity() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -123,13 +123,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuCapacityScaleType",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType com.microsoft.azure.management.compute.ResourceSkuCapacity::scaleType() \u003c- com.microsoft.azure.management.compute.ResourceSkuCapacity is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacity com.microsoft.azure.management.compute.ComputeSku::capacity() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType.AUTOMATIC has the type com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType \u003c- com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacityScaleType com.microsoft.azure.management.compute.ResourceSkuCapacity::scaleType() \u003c- com.microsoft.azure.management.compute.ResourceSkuCapacity is returned from method com.microsoft.azure.management.compute.ResourceSkuCapacity com.microsoft.azure.management.compute.ComputeSku::capacity() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "enum"
         }
@@ -146,13 +146,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuCosts",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCosts is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuCosts\u003e com.microsoft.azure.management.compute.ComputeSku::costs() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuCosts is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuCosts\u003e com.microsoft.azure.management.compute.ComputeSku::costs() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -169,13 +169,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuRestrictions",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -192,13 +192,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuRestrictionsReasonCode",
-          "exampleUseChainInNewApi": "field com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode.NOT_AVAILABLE_FOR_SUBSCRIPTION has the type com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode com.microsoft.azure.management.compute.ResourceSkuRestrictions::reasonCode() \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode::valueOf(java.lang.String) \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsReasonCode com.microsoft.azure.management.compute.ResourceSkuRestrictions::reasonCode() \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "enum"
         }
@@ -215,13 +215,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "ResourceSkuRestrictionsType",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuRestrictionsType is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsType com.microsoft.azure.management.compute.ResourceSkuRestrictionsType::fromString(java.lang.String) \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictionsType is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsType com.microsoft.azure.management.compute.ResourceSkuRestrictions::type() \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.ResourceSkuRestrictionsType is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsType com.microsoft.azure.management.compute.ResourceSkuRestrictionsType::valueOf(java.lang.String) \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictionsType is returned from method com.microsoft.azure.management.compute.ResourceSkuRestrictionsType com.microsoft.azure.management.compute.ResourceSkuRestrictions::type() \u003c- com.microsoft.azure.management.compute.ResourceSkuRestrictions is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.compute.ResourceSkuRestrictions\u003e com.microsoft.azure.management.compute.ComputeSku::restrictions() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "enum"
         }
@@ -238,13 +238,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "StorageAccountTypes",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.StorageAccountTypes is used as parameter in method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes::fromStorageAccountType(com.microsoft.azure.management.compute.StorageAccountTypes) \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.compute.StorageAccountTypes is used as parameter in method com.microsoft.azure.management.compute.DiskSku com.microsoft.azure.management.compute.DiskSku::withName(com.microsoft.azure.management.compute.StorageAccountTypes) \u003c- com.microsoft.azure.management.compute.DiskSku is used as parameter in method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes::fromDiskSku(com.microsoft.azure.management.compute.DiskSku) \u003c- com.microsoft.azure.management.compute.DiskSkuTypes is returned from method com.microsoft.azure.management.compute.DiskSkuTypes com.microsoft.azure.management.compute.ComputeSku::diskSkuType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "enum"
         }
@@ -261,13 +261,13 @@
         "name": "external class in API",
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "VirtualMachineSizeTypes",
-          "exampleUseChainInNewApi": "field com.microsoft.azure.management.compute.VirtualMachineSizeTypes.STANDARD_NC24R has the type com.microsoft.azure.management.compute.VirtualMachineSizeTypes \u003c- com.microsoft.azure.management.compute.VirtualMachineSizeTypes is returned from method com.microsoft.azure.management.compute.VirtualMachineSizeTypes com.microsoft.azure.management.compute.ComputeSku::virtualMachineSizeType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listbyRegionAndResourceType(com.microsoft.azure.management.resources.fluentcore.arm.Region, com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.compute.VirtualMachineSizeTypes.STANDARD_L4S has the type com.microsoft.azure.management.compute.VirtualMachineSizeTypes \u003c- com.microsoft.azure.management.compute.VirtualMachineSizeTypes is returned from method com.microsoft.azure.management.compute.VirtualMachineSizeTypes com.microsoft.azure.management.compute.ComputeSku::virtualMachineSizeType() \u003c- com.microsoft.azure.management.compute.ComputeSku is used as a type parameter or type variable bound on method com.microsoft.azure.PagedList\u003ccom.microsoft.azure.management.compute.ComputeSku\u003e com.microsoft.azure.management.compute.ComputeSkus::listByResourceType(com.microsoft.azure.management.compute.ComputeResourceType) \u003c- com.microsoft.azure.management.compute.ComputeSkus is returned from method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() (method com.microsoft.azure.management.compute.ComputeSkus com.microsoft.azure.management.Azure::computeSkus() is part of the API)",
           "package": "com.microsoft.azure.management.compute",
           "elementKind": "class"
         }
@@ -284,9 +284,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerinstance",
@@ -307,9 +307,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerinstance",
@@ -330,9 +330,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.storage",
@@ -353,9 +353,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.storage",
