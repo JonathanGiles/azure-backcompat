@@ -8,9 +8,9 @@
         "name": "method added to interface",
         "description": "Method was added to an interface.",
         "classification": {
-          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING",
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.network",
