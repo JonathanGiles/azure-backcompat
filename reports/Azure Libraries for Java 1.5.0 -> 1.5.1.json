@@ -9,8 +9,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
           "SOURCE": "EQUIVALENT",
-          "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -34,8 +34,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
           "SOURCE": "EQUIVALENT",
-          "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -59,8 +59,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
           "SOURCE": "EQUIVALENT",
-          "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -84,8 +84,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
           "SOURCE": "EQUIVALENT",
-          "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "BINARY": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
