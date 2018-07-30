@@ -8,9 +8,9 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
-          "SOURCE": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -33,9 +33,9 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
-          "SOURCE": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -58,9 +58,9 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
-          "SOURCE": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
@@ -83,9 +83,9 @@
         "name": "new annotation",
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Beta\u0027.",
         "classification": {
-          "SOURCE": "EQUIVALENT",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
           "BINARY": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Beta",
