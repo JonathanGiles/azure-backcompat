@@ -7,12 +7,12 @@
   {
     "name": "Azure Libraries for Java 1.6.0 -\u003e 1.6.1-SNAPSHOT",
     "success": false,
-    "issues": 33
+    "issues": 37
   },
   {
     "name": "Azure Libraries for Java 1.5.1 -\u003e 1.6.0",
-    "success": false,
-    "issues": 4
+    "success": true,
+    "issues": 0
   },
   {
     "name": "Azure Libraries for Java 1.5.0 -\u003e 1.5.1",
