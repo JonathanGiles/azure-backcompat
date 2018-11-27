@@ -9,8 +9,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerservice",
@@ -32,8 +32,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerservice",
@@ -55,8 +55,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerservice",
@@ -78,8 +78,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.containerservice",
@@ -101,8 +101,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Method\u0027.",
         "classification": {
           "BINARY": "EQUIVALENT",
-          "SOURCE": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Method",
@@ -126,8 +126,8 @@
         "description": "Element newly annotated with \u0027com.microsoft.azure.management.apigeneration.Method\u0027.",
         "classification": {
           "BINARY": "EQUIVALENT",
-          "SOURCE": "EQUIVALENT",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "EQUIVALENT"
         },
         "attachments": {
           "annotationType": "com.microsoft.azure.management.apigeneration.Method",
@@ -143,7 +143,7 @@
   },
   {
     "oldAPI": "null",
-    "newAPI": "class com.microsoft.azure.management.sql.ElasticPoolEditions",
+    "newAPI": "class com.microsoft.azure.management.sql.CreateMode",
     "differences": [
       {
         "code": "java.class.externalClassExposedInAPI",
@@ -151,12 +151,12 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
-          "classSimpleName": "ElasticPoolEditions",
-          "exampleUseChainInNewApi": "field com.microsoft.azure.management.sql.ElasticPoolEditions.BASIC has the type com.microsoft.azure.management.sql.ElasticPoolEditions \u003c- com.microsoft.azure.management.sql.ElasticPoolEditions is returned from method com.microsoft.azure.management.sql.ElasticPoolEditions com.microsoft.azure.management.sql.RecommendedElasticPool::databaseEdition() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "classSimpleName": "CreateMode",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.CreateMode is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateFinal com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateMode::withMode(com.microsoft.azure.management.sql.CreateMode) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateMode is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateMode com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithSourceDatabaseId::withSourceDatabase(com.microsoft.azure.management.sql.SqlDatabase) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
           "package": "com.microsoft.azure.management.sql",
           "elementKind": "class"
         }
@@ -166,7 +166,7 @@
   },
   {
     "oldAPI": "null",
-    "newAPI": "class com.microsoft.azure.management.sql.ElasticPoolState",
+    "newAPI": "class com.microsoft.azure.management.sql.DatabaseEditions",
     "differences": [
       {
         "code": "java.class.externalClassExposedInAPI",
@@ -174,12 +174,12 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
-          "classSimpleName": "ElasticPoolState",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.ElasticPoolState is returned from method com.microsoft.azure.management.sql.ElasticPoolState com.microsoft.azure.management.sql.SqlElasticPool::state() \u003c- com.microsoft.azure.management.sql.SqlElasticPool is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::withExistingElasticPool(com.microsoft.azure.management.sql.SqlElasticPool) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "classSimpleName": "DatabaseEditions",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.sql.DatabaseEditions.BUSINESS has the type com.microsoft.azure.management.sql.DatabaseEditions \u003c- com.microsoft.azure.management.sql.DatabaseEditions is returned from method com.microsoft.azure.management.sql.DatabaseEditions com.microsoft.azure.management.sql.SqlDatabase::edition() \u003c- com.microsoft.azure.management.sql.SqlDatabase is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SqlDatabase\u003e com.microsoft.azure.management.sql.RecommendedElasticPool::databases() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
           "package": "com.microsoft.azure.management.sql",
           "elementKind": "class"
         }
@@ -189,7 +189,7 @@
   },
   {
     "oldAPI": "null",
-    "newAPI": "interface com.microsoft.azure.management.sql.ServiceObjective",
+    "newAPI": "interface com.microsoft.azure.management.sql.RestorePoint",
     "differences": [
       {
         "code": "java.class.externalClassExposedInAPI",
@@ -197,14 +197,60 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
-          "classSimpleName": "ServiceObjective",
-          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.ServiceObjective is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.ServiceObjective\u003e com.microsoft.azure.management.sql.SqlServer::listServiceObjectives() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "classSimpleName": "RestorePoint",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.RestorePoint is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateAllOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithRestorePointDatabase::fromRestorePoint(com.microsoft.azure.management.sql.RestorePoint) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
           "package": "com.microsoft.azure.management.sql",
           "elementKind": "interface"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.sql.RestorePointTypes",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "RestorePointTypes",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.sql.RestorePointTypes.DISCRETE has the type com.microsoft.azure.management.sql.RestorePointTypes \u003c- com.microsoft.azure.management.sql.RestorePointTypes is returned from method com.microsoft.azure.management.sql.RestorePointTypes com.microsoft.azure.management.sql.RestorePoint::restorePointType() \u003c- com.microsoft.azure.management.sql.RestorePoint is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithCreateAllOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithRestorePointDatabase::fromRestorePoint(com.microsoft.azure.management.sql.RestorePoint) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.sql",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.sql.ServiceObjectiveName",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "ServiceObjectiveName",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.ServiceObjectiveName is returned from method com.microsoft.azure.management.sql.ServiceObjectiveName com.microsoft.azure.management.sql.SloUsageMetricInterface::serviceLevelObjective() \u003c- com.microsoft.azure.management.sql.SloUsageMetricInterface is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SloUsageMetricInterface\u003e com.microsoft.azure.management.sql.ServiceTierAdvisor::serviceLevelObjectiveUsageMetrics() \u003c- com.microsoft.azure.management.sql.ServiceTierAdvisor is used as a type parameter or type variable bound on method rx.Observable\u003ccom.microsoft.azure.management.sql.ServiceTierAdvisor\u003e com.microsoft.azure.management.sql.SqlDatabase::listServiceTierAdvisorsAsync() \u003c- com.microsoft.azure.management.sql.SqlDatabase is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SqlDatabase\u003e com.microsoft.azure.management.sql.RecommendedElasticPool::databases() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.sql",
+          "elementKind": "class"
         }
       }
     ],
@@ -220,8 +266,8 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "SqlDatabase",
@@ -243,8 +289,8 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "SqlElasticPool",
@@ -266,8 +312,8 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "SqlFirewallRule",
@@ -289,8 +335,8 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "SqlServer",
@@ -312,8 +358,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.sql",
@@ -335,8 +381,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.sql",
@@ -358,8 +404,8 @@
         "description": "Method was added to an interface.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "BREAKING"
         },
         "attachments": {
           "package": "com.microsoft.azure.management.sql",
@@ -373,6 +419,397 @@
   },
   {
     "oldAPI": "null",
+    "newAPI": "interface com.microsoft.azure.management.sql.SqlWarehouse",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "SqlWarehouse",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.SqlWarehouse is returned from method com.microsoft.azure.management.sql.SqlWarehouse com.microsoft.azure.management.sql.SqlDatabase::asWarehouse() \u003c- com.microsoft.azure.management.sql.SqlDatabase is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SqlDatabase\u003e com.microsoft.azure.management.sql.RecommendedElasticPool::databases() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.sql",
+          "elementKind": "interface"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "interface com.microsoft.azure.management.sql.TransparentDataEncryption",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "TransparentDataEncryption",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.TransparentDataEncryption is used as a type parameter or type variable bound on method rx.Observable\u003ccom.microsoft.azure.management.sql.TransparentDataEncryption\u003e com.microsoft.azure.management.sql.TransparentDataEncryption::updateStatusAsync(com.microsoft.azure.management.sql.TransparentDataEncryptionStates) \u003c- com.microsoft.azure.management.sql.TransparentDataEncryption is used as a type parameter or type variable bound on method rx.Observable\u003ccom.microsoft.azure.management.sql.TransparentDataEncryption\u003e com.microsoft.azure.management.sql.SqlDatabase::getTransparentDataEncryptionAsync() \u003c- com.microsoft.azure.management.sql.SqlDatabase is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SqlDatabase\u003e com.microsoft.azure.management.sql.RecommendedElasticPool::databases() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.sql",
+          "elementKind": "interface"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "interface com.microsoft.azure.management.sql.UpgradeHintInterface",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "UpgradeHintInterface",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.sql.UpgradeHintInterface is returned from method com.microsoft.azure.management.sql.UpgradeHintInterface com.microsoft.azure.management.sql.SqlDatabase::getUpgradeHint() \u003c- com.microsoft.azure.management.sql.SqlDatabase is used as a type parameter or type variable bound on method java.util.List\u003ccom.microsoft.azure.management.sql.SqlDatabase\u003e com.microsoft.azure.management.sql.RecommendedElasticPool::databases() \u003c- com.microsoft.azure.management.sql.RecommendedElasticPool is used as a type parameter or type variable bound on method java.util.Map\u003cjava.lang.String, com.microsoft.azure.management.sql.RecommendedElasticPool\u003e com.microsoft.azure.management.sql.SqlServer::listRecommendedElasticPools() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.sql",
+          "elementKind": "interface"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.AccessTier",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "AccessTier",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.storage.AccessTier.HOT has the type com.microsoft.azure.management.storage.AccessTier \u003c- com.microsoft.azure.management.storage.AccessTier is returned from method com.microsoft.azure.management.storage.AccessTier com.microsoft.azure.management.storage.StorageAccount::accessTier() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.AccountStatus",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "AccountStatus",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.AccountStatus is returned from method com.microsoft.azure.management.storage.AccountStatus com.microsoft.azure.management.storage.AccountStatus::valueOf(java.lang.String) \u003c- com.microsoft.azure.management.storage.AccountStatus is used as parameter in method void com.microsoft.azure.management.storage.implementation.AccountStatuses::\u003cinit\u003e(com.microsoft.azure.management.storage.AccountStatus, com.microsoft.azure.management.storage.AccountStatus) \u003c- com.microsoft.azure.management.storage.implementation.AccountStatuses is returned from method com.microsoft.azure.management.storage.implementation.AccountStatuses com.microsoft.azure.management.storage.StorageAccount::accountStatuses() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.CustomDomain",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "CustomDomain",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.CustomDomain is returned from method com.microsoft.azure.management.storage.CustomDomain com.microsoft.azure.management.storage.CustomDomain::withName(java.lang.String) \u003c- com.microsoft.azure.management.storage.CustomDomain is returned from method com.microsoft.azure.management.storage.CustomDomain com.microsoft.azure.management.storage.StorageAccount::customDomain() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.Encryption",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "Encryption",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.Encryption is returned from method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.Encryption::withServices(com.microsoft.azure.management.storage.EncryptionServices) \u003c- com.microsoft.azure.management.storage.Encryption is returned from method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.StorageAccount::encryption() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.EncryptionServices",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "EncryptionServices",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.EncryptionServices is returned from method com.microsoft.azure.management.storage.EncryptionServices com.microsoft.azure.management.storage.Encryption::services() \u003c- com.microsoft.azure.management.storage.Encryption is returned from method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.StorageAccount::encryption() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.Endpoints",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "Endpoints",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.Endpoints is used as parameter in method void com.microsoft.azure.management.storage.PublicEndpoints::\u003cinit\u003e(com.microsoft.azure.management.storage.Endpoints, com.microsoft.azure.management.storage.Endpoints) \u003c- com.microsoft.azure.management.storage.PublicEndpoints is returned from method com.microsoft.azure.management.storage.PublicEndpoints com.microsoft.azure.management.storage.StorageAccount::endPoints() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.KeySource",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "KeySource",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.KeySource is used as a type parameter or type variable bound on method java.util.Collection\u003ccom.microsoft.azure.management.storage.KeySource\u003e com.microsoft.azure.management.storage.KeySource::values() \u003c- com.microsoft.azure.management.storage.KeySource is used as parameter in method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.Encryption::withKeySource(com.microsoft.azure.management.storage.KeySource) \u003c- com.microsoft.azure.management.storage.Encryption is returned from method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.StorageAccount::encryption() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.KeyVaultProperties",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "KeyVaultProperties",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.KeyVaultProperties is used as parameter in method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.Encryption::withKeyVaultProperties(com.microsoft.azure.management.storage.KeyVaultProperties) \u003c- com.microsoft.azure.management.storage.Encryption is returned from method com.microsoft.azure.management.storage.Encryption com.microsoft.azure.management.storage.StorageAccount::encryption() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.Kind",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "Kind",
+          "exampleUseChainInNewApi": "field com.microsoft.azure.management.storage.Kind.BLOB_STORAGE has the type com.microsoft.azure.management.storage.Kind \u003c- com.microsoft.azure.management.storage.Kind is returned from method com.microsoft.azure.management.storage.Kind com.microsoft.azure.management.storage.StorageAccount::kind() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.ProvisioningState",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "ProvisioningState",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.ProvisioningState is returned from method com.microsoft.azure.management.storage.ProvisioningState com.microsoft.azure.management.storage.ProvisioningState::fromString(java.lang.String) \u003c- com.microsoft.azure.management.storage.ProvisioningState is returned from method com.microsoft.azure.management.storage.ProvisioningState com.microsoft.azure.management.storage.StorageAccount::provisioningState() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.PublicEndpoints",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "PublicEndpoints",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.PublicEndpoints is returned from method com.microsoft.azure.management.storage.PublicEndpoints com.microsoft.azure.management.storage.StorageAccount::endPoints() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.Sku",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "Sku",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.Sku is returned from method com.microsoft.azure.management.storage.Sku com.microsoft.azure.management.storage.Sku::withName(com.microsoft.azure.management.storage.SkuName) \u003c- com.microsoft.azure.management.storage.Sku is returned from method com.microsoft.azure.management.storage.Sku com.microsoft.azure.management.storage.StorageAccount::sku() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.SkuName",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "SkuName",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.SkuName is used as parameter in method com.microsoft.azure.management.storage.Sku com.microsoft.azure.management.storage.Sku::withName(com.microsoft.azure.management.storage.SkuName) \u003c- com.microsoft.azure.management.storage.Sku is returned from method com.microsoft.azure.management.storage.Sku com.microsoft.azure.management.storage.StorageAccount::sku() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "enum com.microsoft.azure.management.storage.SkuTier",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "SkuTier",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.SkuTier is returned from method com.microsoft.azure.management.storage.SkuTier com.microsoft.azure.management.storage.SkuTier::fromString(java.lang.String) \u003c- com.microsoft.azure.management.storage.SkuTier is returned from method com.microsoft.azure.management.storage.SkuTier com.microsoft.azure.management.storage.Sku::tier() \u003c- com.microsoft.azure.management.storage.Sku is returned from method com.microsoft.azure.management.storage.Sku com.microsoft.azure.management.storage.StorageAccount::sku() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "enum"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
     "newAPI": "interface com.microsoft.azure.management.storage.StorageAccount.Definition",
     "differences": [
       {
@@ -381,14 +818,83 @@
         "description": "A class from supplementary archives is used in a public capacity in the API.",
         "classification": {
           "BINARY": "NON_BREAKING",
-          "SOURCE": "NON_BREAKING",
-          "SEMANTIC": "POTENTIALLY_BREAKING"
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
         },
         "attachments": {
           "classSimpleName": "StorageAccount",
           "exampleUseChainInNewApi": "",
           "package": "com.microsoft.azure.management.storage",
           "elementKind": "interface"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.StorageAccountEncryptionKeySource",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "StorageAccountEncryptionKeySource",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.StorageAccountEncryptionKeySource is returned from method com.microsoft.azure.management.storage.StorageAccountEncryptionKeySource com.microsoft.azure.management.storage.StorageAccount::encryptionKeySource() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.StorageAccountSkuType",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "StorageAccountSkuType",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.StorageAccountSkuType is returned from method com.microsoft.azure.management.storage.StorageAccountSkuType com.microsoft.azure.management.storage.StorageAccountSkuType::fromSkuName(com.microsoft.azure.management.storage.SkuName) \u003c- com.microsoft.azure.management.storage.StorageAccountSkuType is returned from method com.microsoft.azure.management.storage.StorageAccountSkuType com.microsoft.azure.management.storage.StorageAccount::skuType() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage",
+          "elementKind": "class"
+        }
+      }
+    ],
+    "grade": "grade-fyi"
+  },
+  {
+    "oldAPI": "null",
+    "newAPI": "class com.microsoft.azure.management.storage.implementation.AccountStatuses",
+    "differences": [
+      {
+        "code": "java.class.externalClassExposedInAPI",
+        "name": "external class in API",
+        "description": "A class from supplementary archives is used in a public capacity in the API.",
+        "classification": {
+          "BINARY": "NON_BREAKING",
+          "SEMANTIC": "POTENTIALLY_BREAKING",
+          "SOURCE": "NON_BREAKING"
+        },
+        "attachments": {
+          "classSimpleName": "AccountStatuses",
+          "exampleUseChainInNewApi": "com.microsoft.azure.management.storage.implementation.AccountStatuses is returned from method com.microsoft.azure.management.storage.implementation.AccountStatuses com.microsoft.azure.management.storage.StorageAccount::accountStatuses() \u003c- com.microsoft.azure.management.storage.StorageAccount is used as parameter in method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAuthenticationAfterElasticPool com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithImportFromAfterElasticPool::importFrom(com.microsoft.azure.management.storage.StorageAccount, java.lang.String, java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool is used as a type parameter or type variable bound on method com.microsoft.azure.management.sql.SqlElasticPool.DefinitionStages.Blank\u003ccom.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithExistingDatabaseAfterElasticPool\u003e com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithElasticPoolName::defineElasticPool(java.lang.String) @ com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.DefinitionStages.WithAllDifferentOptions com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition::define(java.lang.String) \u003c- com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition is returned from method com.microsoft.azure.management.sql.SqlDatabaseOperations.SqlDatabaseActionsDefinition com.microsoft.azure.management.sql.SqlServer::databases() \u003c- com.microsoft.azure.management.sql.SqlServer is used as parameter in method T com.microsoft.azure.management.sql.SqlChildrenOperations\u003cT\u003e::getBySqlServer(com.microsoft.azure.management.sql.SqlServer, java.lang.String) @ com.microsoft.azure.management.sql.SqlFirewallRuleOperations \u003c- com.microsoft.azure.management.sql.SqlFirewallRuleOperations is returned from method com.microsoft.azure.management.sql.SqlFirewallRuleOperations com.microsoft.azure.management.sql.SqlServers::firewallRules() \u003c- com.microsoft.azure.management.sql.SqlServers is returned from method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() (method com.microsoft.azure.management.sql.SqlServers com.microsoft.azure.management.Azure::sqlServers() is part of the API)",
+          "package": "com.microsoft.azure.management.storage.implementation",
+          "elementKind": "class"
         }
       }
     ],
