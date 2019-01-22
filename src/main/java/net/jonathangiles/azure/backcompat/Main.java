@@ -3,6 +3,8 @@ package net.jonathangiles.azure.backcompat;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import net.jonathangiles.azure.backcompat.archive.MavenAwareFileArchive;
+import net.jonathangiles.azure.backcompat.gson.DeserializerForProject;
+import net.jonathangiles.azure.backcompat.model.CompareRequest;
 import net.jonathangiles.azure.backcompat.report.Result;
 import net.jonathangiles.azure.backcompat.report.Summary;
 import org.jboss.shrinkwrap.resolver.api.maven.*;
@@ -30,7 +32,7 @@ public class Main {
     public static void main(String[] args) {
         REPORTS_DIR.mkdir();
 
-        List<SDK> releasesToCheck = loadSDKs();
+        List<CompareRequest> releasesToCheck = loadSDKs();
 
         List<Summary> summaries = new ArrayList<>();
         releasesToCheck.forEach(sdk -> compare(sdk, summaries));
@@ -46,21 +48,24 @@ public class Main {
         System.exit(0);
     }
 
-    private static List<SDK> loadSDKs() {
+    private static List<CompareRequest> loadSDKs() {
         try (Reader reader = new FileReader("./releases.json")) {
-            List<SDK> sdks = new GsonBuilder().create().fromJson(reader, new TypeToken<List<SDK>>(){}.getType());
+            List<List<CompareRequest>> sdks = new GsonBuilder()
+                                     .registerTypeAdapter(CompareRequest.class, new DeserializerForProject())
+                                     .create()
+                                     .fromJson(reader, new TypeToken<List<CompareRequest>>(){}.getType());
 
             LOGGER.info("Read in the following SDKs from the releases.json file:");
             sdks.forEach(System.out::println);
 
-            return sdks;
+            return sdks.stream().flatMap(List::stream).collect(Collectors.toList());
         } catch (IOException e) {
             e.printStackTrace();
             return Collections.emptyList();
         }
     }
 
-    private static void compare(SDK sdk, List<Summary> summaries) {
+    private static void compare(CompareRequest sdk, List<Summary> summaries) {
         // add support for maven central snapshots repo
         MavenRemoteRepository mavenCentralSnapshots = MavenRemoteRepositories.createRemoteRepository(
                 "ossrh",
@@ -75,11 +80,11 @@ public class Main {
                 .withRemoteRepo(mavenCentralSnapshots)
                 .withMavenCentralRepo(true);
 
-        MavenResolvedArtifact[] oldArtifacts = cfgOld.resolve(sdk.getOldRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
-        MavenResolvedArtifact[] newArtifacts = cfgNew.resolve(sdk.getNewRelease()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
+        MavenResolvedArtifact[] oldArtifacts = cfgOld.resolve(sdk.getOldVersionGAV()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
+        MavenResolvedArtifact[] newArtifacts = cfgNew.resolve(sdk.getNewVersionGAV()).using(AcceptAllStrategy.INSTANCE).asResolvedArtifact();
 
         API oldApi = API
-                .of(new MavenAwareFileArchive(sdk.getOldRelease(), oldArtifacts[0].asFile()))
+                .of(new MavenAwareFileArchive(sdk.getGA() + ":" + sdk.getOldVersion(), oldArtifacts[0].asFile()))
                 .addSupportArchives(Stream.of(oldArtifacts)
                     .skip(1)
                     .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
@@ -88,7 +93,7 @@ public class Main {
 
 
         API newApi = API
-                .of(new MavenAwareFileArchive(sdk.getNewRelease(), newArtifacts[0].asFile()))
+                .of(new MavenAwareFileArchive(sdk.getGA() + ":" + sdk.getNewVersion(), newArtifacts[0].asFile()))
                 .addSupportArchives(Stream.of(newArtifacts)
                     .skip(1)
                     .map(a -> new MavenAwareFileArchive(a.getCoordinate().toCanonicalForm(), a.asFile()))
@@ -105,7 +110,7 @@ public class Main {
                 .withNewAPI(newApi)
                 .build();
 
-        LOGGER.info("Starting analysis of " + sdk.getName());
+        LOGGER.info("Starting analysis of " + sdk.getGA() + " between " + sdk.getOldVersion().getVersionString() + " and " + sdk.getNewVersion().getVersionString());
         try (AnalysisResult result = revapi.analyze(analysisContext)) {
             result.throwIfFailed();
             CollectingReporter reporter = result.getExtensions().getFirstExtension(CollectingReporter.class, null);
@@ -115,14 +120,14 @@ public class Main {
                     .collect(Collectors.toList());
 
             int issues = (int)reporter.getReports().stream().filter(report -> report.getDifferences().size() > 0).count();
-            summaries.add(new Summary(sdk.getName(), issues));
+            summaries.add(new Summary(sdk, issues));
 
-            try (Writer writer = new FileWriter(REPORTS_DIR.getName() + "/" + sdk.getName() + ".json")) {
+            try (Writer writer = new FileWriter(REPORTS_DIR.getName() + "/" + sdk.getGA() + ":" + sdk.getVersionsString() + ".json")) {
                 new GsonBuilder().setPrettyPrinting().create().toJson(results, writer);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        LOGGER.info("Completed analysis of " + sdk.getName());
+        LOGGER.info("Completed analysis of " + sdk.getGA());
     }
 }

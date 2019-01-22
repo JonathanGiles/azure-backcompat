@@ -11,9 +11,6 @@
         .center {
             text-align: center;
         }
-        .icon {
-            width: 32px;
-        }
         .table {
             width: 100%;
             margin: 0 auto;
@@ -28,18 +25,20 @@
 
         <p>
             This report displays the results of backwards compatibility scans run over a number of projects, comparing a previous release with a more recent release.
-            To view the source code that operates this project, refer to the <a href="https://github.com/JonathanGiles/azure-backcompat">GitHub project</a>.
         </p>
 
         <table id="resultsTable" class="table table-hover">
             <thead class="thead-light">
                 <tr>
                     <th>Name</th>
+                    <th class='center'>Old Version</th>
+                    <th class='center'>New Version</th>
                     <th class='center'>Issues Identified</th>
                 </tr>
             </thead>
         </table>
 
+        <br/>
         <small><center>Maintained by <a href="http://www.jonathangiles.net">Jonathan Giles</a></center></small>
     </div>
 
@@ -61,7 +60,9 @@
             var row = $("<tr />");
             $("#resultsTable").append(row);
 
-            row.append($("<td><a href='results.html?report=" + rowData.name + ".json'>" + rowData.name + "</a></td>"));
+            row.append($("<td><a href='results.html?report=" + rowData.name + ":" + rowData.oldVersion + "-" + rowData.newVersion + ".json'>" + rowData.name + "</a></td>"));
+            row.append($("<td class='center'>" + rowData.oldVersion + "</td>"));
+            row.append($("<td class='center'>" + rowData.newVersion + "</td>"));
             row.append($("<td class='center'>" + rowData.issues + "</td>"));
         }
     </script>
